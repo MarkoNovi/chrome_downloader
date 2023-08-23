@@ -20,7 +20,7 @@ def extract_version(output):
 
 def download(google_version):
     try:
-        session = requests.Session()
+        ## session = requests.Session()
         workdir = getcwd()
 
         url = f'https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_{google_version}'
