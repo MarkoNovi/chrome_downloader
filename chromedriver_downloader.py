@@ -24,7 +24,8 @@ def download(google_version):
         workdir = getcwd()
 
         url = f'https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_{google_version}'
-        version_response = session.get(url).text
+        ## version_response = urllib.requests.get(url).text
+        version_response = urllib.request.urlopen(url).read().decode('utf-8').strip()
         download_url = f"https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/{version_response}/win32/chromedriver-win32.zip"
         urllib.request.urlretrieve(download_url, "chromedriver.zip")
 
