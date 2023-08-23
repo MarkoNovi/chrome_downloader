@@ -1,2 +1,3 @@
-# chrome_downloader
-download appropriate chromedriver version
+# chromedriver_downloader
+download the appropriate chromedriver version
+using only preinstalled libraries
